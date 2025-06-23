@@ -8,16 +8,22 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "15.3.3"
+    "@okta/okta-auth-js": "^7.12.1",
+    "@okta/okta-react": "^6.10.0",
+    "@okta/okta-signin-widget": "^7.32.1",
+    "@prisma/client": "^6.9.0",
+    "next": "15.3.3",
+    "pg": "^8.16.0",
+    "prisma": "^6.9.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

@@ -1,22 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/create-next-app).
+# Shopping Prices App
+
+This is a Next.js (React + TypeScript) app for managing shopping item prices, with PostgreSQL backend and Okta authentication. There are two roles:
+- **Users**: Can view item prices
+- **Admins**: Can set item prices
+
+## Features
+- Sign in with Okta
+- Role-based access (user/admin)
+- PostgreSQL for item/price storage
 
 ## Getting Started
+1. Install dependencies: `npm install`
+2. Set up your PostgreSQL database and update the connection string in `.env`
+3. Configure Okta credentials in `.env`
+4. Run the development server: `npm run dev`
 
-First, run the development server:
+## Project Structure
+- `src/` - Main source code
+- `app/` - Next.js App Router
+- `pages/api/` - API routes
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/route.ts`. The page auto-updates as you edit the file.
+Replace this README with more details as you build your app.
 
 ## Learn More
 
