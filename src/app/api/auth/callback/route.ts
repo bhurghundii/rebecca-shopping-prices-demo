@@ -72,7 +72,7 @@ export async function GET(req: NextRequest) {
         name: payload.name,
         picture: payload.picture
       }), {
-        httpOnly: true,
+        httpOnly: false, // Set to false so client-side JS can read it
         secure: process.env.NODE_ENV === 'production',
         sameSite: 'lax',
         maxAge: 60 * 60, // 1 hour

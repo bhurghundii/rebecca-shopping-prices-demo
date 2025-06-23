@@ -5,7 +5,7 @@ export async function GET(req: NextRequest) {
   const { origin } = new URL(req.url);
   const response = NextResponse.redirect(new URL('/', origin));
   response.cookies.set('user', '', {
-    httpOnly: true,
+    httpOnly: false, // Match the same setting as when we set the cookie
     secure: process.env.NODE_ENV === 'production',
     expires: new Date(0),
     path: '/'
