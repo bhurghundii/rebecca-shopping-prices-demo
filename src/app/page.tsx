@@ -275,7 +275,8 @@ export default function ItemsPage() {
       ) : (
         <Paper elevation={1} sx={{ p: 3, bgcolor: 'background.default', borderRadius: 2 }}>
           <Typography variant="body2" color="text.secondary" align="center">
-            Sign in as admin to add or update items.
+            Standard users can view items and prices.
+            Admins can add or update items.
           </Typography>
         </Paper>
       )}
